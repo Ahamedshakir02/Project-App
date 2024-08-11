@@ -1,0 +1,23 @@
+[
+    {
+        
+      "id": 1,
+      "title": "Revamp Our E-commerce Website with a Fresh & Clean UI Design",
+      "location": "Hong Kong",
+      "price": "$290",
+      "duration": "14 Days",
+      "proposals": "10 to 50",
+      "tags": ["UI Design", "Graphic Design", "Web Design", "Figma"],
+      "verified": true
+    },
+    {
+      "id": 2,
+      "title": "Create an Eye-Catching UI for Our Fitness App (Only Freelancers)",
+      "location": "United States",
+      "price": "$15 - $20",
+      "duration": "3 Months",
+      "proposals": "50 to 100",
+      "tags": ["UI Design", "App Design"],
+      "verified": false
+    }
+  ]
