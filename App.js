@@ -1,18 +1,24 @@
-import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, ScrollView, FlatList } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, ScrollView, FlatList, Switch } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import projects from './project.json';
 
 function HomeScreen() {
+  const [expandedProjectId, setExpandedProjectId] = useState(null);
+
+  const toggleExpand = (id) => {
+    setExpandedProjectId(expandedProjectId === id ? null : id);
+  };
+
   return (
     <View style={styles.container}>
       {/* Header Section */}
       <View style={styles.header}>
         <Text style={styles.greeting}>Hey, Leri Kuns</Text>
         <Image
-          source={{ uri: 'https://your-image-url.com/profile-pic.jpg' }}
+          source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6PWiT4jbOgFjpAy0ROofuZ4PS8AzvDqqlDw&usqp=CAU' }}
           style={styles.profilePic}
         />
       </View>
@@ -43,16 +49,21 @@ function HomeScreen() {
       <FlatList
         data={projects}
         renderItem={({ item }) => (
-          <View style={styles.projectItem}>
-            <Text style={styles.location}>{item.location}</Text>
-            <Text style={styles.title}>{item.title}</Text>
-            <Text>{`${item.price} - ${item.duration} - ${item.proposals} Proposals`}</Text>
-            <View style={styles.tags}>
-              {item.tags.map((tag) => (
-                <Text key={tag} style={styles.tag}>{tag}</Text>
-              ))}
+          <TouchableOpacity onPress={() => toggleExpand(item.id)}>
+            <View style={styles.projectItem}>
+              <Text style={styles.location}>{item.location}</Text>
+              <Text style={styles.title}>{item.title}</Text>
+              <Text>{`$${item.amount} - ${item.duration} - ${item.proposals} Proposals`}</Text>
+              <View style={styles.tags}>
+                {item.tags.map((tag) => (
+                  <Text key={tag} style={styles.tag}>{tag}</Text>
+                ))}
+              </View>
+              {expandedProjectId === item.id && (
+                <Text style={styles.description}>{item.description}</Text>
+              )}
             </View>
-          </View>
+          </TouchableOpacity>
         )}
         keyExtractor={(item) => item.id}
       />
@@ -150,10 +161,10 @@ const styles = StyleSheet.create({
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 8,
+    padding: 6,
     borderColor: '#ccc',
-    borderWidth: 1,
-    borderRadius: 8,
+    borderWidth: 2,
+    borderRadius: 100,
     marginBottom: 16,
   },
   searchInput: {
@@ -177,7 +188,7 @@ const styles = StyleSheet.create({
   projectItem: {
     padding: 16,
     marginBottom: 16,
-    borderColor: '#eee',
+    borderColor: '#ccc',
     borderWidth: 1,
     borderRadius: 8,
   },
@@ -201,5 +212,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     borderRadius: 16,
     backgroundColor: '#f0f0f0',
+  },
+  description: {
+    marginTop: 12,
+    fontSize: 14,
+    color: '#555',
   },
 });
