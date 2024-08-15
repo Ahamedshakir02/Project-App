@@ -14,16 +14,16 @@ function HomeScreen() {
 
   return (
     <View style={styles.container}>
-      {/* Header Section */}
+
       <View style={styles.header}>
-        <Text style={styles.greeting}>Hey, Leri Kuns</Text>
+        <Text style={styles.greeting}>Hey, Ahamdd Shakir</Text>
         <Image
           source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6PWiT4jbOgFjpAy0ROofuZ4PS8AzvDqqlDw&usqp=CAU' }}
           style={styles.profilePic}
         />
+        
       </View>
 
-      {/* Search Bar */}
       <View style={styles.searchContainer}>
         <TextInput
           style={styles.searchInput}
@@ -34,10 +34,9 @@ function HomeScreen() {
         </TouchableOpacity>
       </View>
 
-      {/* Recent Searches */}
       <View style={styles.recentSearches}>
         <ScrollView horizontal>
-          {['UI Design', 'Landing Page', 'Banner Design'].map((tag) => (
+          {['Education', 'Sustainability', 'Banner Design'].map((tag) => (
             <TouchableOpacity key={tag} style={styles.searchTag}>
               <Text>{tag}</Text>
             </TouchableOpacity>
@@ -45,7 +44,7 @@ function HomeScreen() {
         </ScrollView>
       </View>
 
-      {/* Project List */}
+
       <FlatList
         data={projects}
         renderItem={({ item }) => (
@@ -101,32 +100,51 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        screenOptions={({ route }) => ({
-          tabBarIcon: ({ color, size }) => {
-            let iconName;
-
-            if (route.name === 'Home') {
-              iconName = 'home';
-            } else if (route.name === 'Category') {
-              iconName = 'list';
-            } else if (route.name === 'Saved') {
-              iconName = 'bookmark';
-            } else if (route.name === 'Profile') {
-              iconName = 'person';
-            }
-
-            return <Ionicons name={iconName} size={size} color={color} />;
-          },
-        })}
         tabBarOptions={{
           activeTintColor: 'tomato',
           inactiveTintColor: 'gray',
         }}
       >
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Category" component={CategoryScreen} />
-        <Tab.Screen name="Saved" component={SavedScreen} />
-        <Tab.Screen name="Profile" component={ProfileScreen} />
+        <Tab.Screen
+          name="Home" 
+          component={HomeScreen} 
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="home" size={size} color={color} />
+            ),
+            tabBarLabel: 'Home',
+          }}
+        />
+        <Tab.Screen 
+          name="Category" 
+          component={CategoryScreen} 
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="list" size={size} color={color} />
+            ),
+            tabBarLabel: 'Category',
+          }}
+        />
+        <Tab.Screen 
+          name="Saved" 
+          component={SavedScreen} 
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="bookmark" size={size} color={color} />
+            ),
+            tabBarLabel: 'Saved',
+          }}
+        />
+        <Tab.Screen 
+          name="Profile" 
+          component={ProfileScreen} 
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="person" size={size} color={color} />
+            ),
+            tabBarLabel: 'Profile',
+          }}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );
@@ -150,7 +168,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   greeting: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
   },
   profilePic: {
