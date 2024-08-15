@@ -1,23 +1,374 @@
 [
     {
         
-      "id": 1,
+      "id": "P026",
       "title": "Revamp Our E-commerce Website with a Fresh & Clean UI Design",
       "location": "Hong Kong",
-      "price": "$290",
+      "amount": "$290",
       "duration": "14 Days",
+      "description": "Our e-commerce website is in need of a revamp and we are looking for a talented UI designer to help us create a fresh and clean design that is user-friendly and visually appealing.",
       "proposals": "10 to 50",
       "tags": ["UI Design", "Graphic Design", "Web Design", "Figma"],
       "verified": true
     },
     {
-      "id": 2,
+      "id": "P027",
       "title": "Create an Eye-Catching UI for Our Fitness App (Only Freelancers)",
       "location": "United States",
-      "price": "$15 - $20",
+      "amount": "$15 - $20",
       "duration": "3 Months",
       "proposals": "50 to 100",
+      "description": "We are looking for a freelancer to design a new UI for our fitness app that is both functional and aesthetically pleasing. The ideal candidate should have experience in designing apps for the fitness industry.",
       "tags": ["UI Design", "App Design"],
       "verified": false
-    }
-  ]
+    },
+    {
+       "id": "P001",
+       "title": "Smart Home Automation",
+       "duration": "4 months",
+       "location": "Austin, TX",
+       "description": "Developing an intelligent home automation system to enhance convenience and energy efficiency.",
+       "amount": 950,
+       "tags": [
+         "IoT",
+         "smart devices",
+         "home security"
+       ],
+       "postedon": "2024-08-01"
+     },
+     {
+       "id": "P002",
+       "title": "Blockchain for Supply Chain",
+       "duration": "6 months",
+       "location": "Seattle, WA",
+       "description": "Implementing blockchain technology to improve transparency and efficiency in supply chains.",
+       "amount": 800,
+       "tags": [
+         "blockchain",
+         "supply chain management"
+       ],
+       "postedon": "2024-08-02"
+     },
+     {
+       "id": "P003",
+       "title": "AI Chatbot Development",
+       "duration": "3 months",
+       "location": "San Francisco, CA",
+       "description": "Creating a sophisticated AI chatbot to assist with customer service and support.",
+       "amount": 650,
+       "tags": [
+         "AI",
+         "natural language processing",
+         "customer support"
+       ],
+       "postedon": "2024-08-03"
+     },
+     {
+       "id": "P004",
+       "title": "Cybersecurity Enhancement",
+       "duration": "5 months",
+       "location": "New York, NY",
+       "description": "Upgrading cybersecurity measures to protect sensitive data and prevent breaches.",
+       "amount": 700,
+       "tags": [
+         "cybersecurity",
+         "data protection",
+         "network security"
+       ],
+       "postedon": "2024-08-04"
+     },
+     {
+       "id": "P005",
+       "title": "Virtual Reality Training Modules",
+       "duration": "6 months",
+       "location": "Chicago, IL",
+       "description": "Developing virtual reality modules for immersive training experiences in various industries.",
+       "amount": 900,
+       "tags": [
+         "VR",
+         "training",
+         "education"
+       ],
+       "postedon": "2024-08-05"
+     },
+     {
+       "id": "P006",
+       "title": "Green Energy Solutions",
+       "duration": "7 months",
+       "location": "Portland, OR",
+       "description": "Researching and implementing sustainable energy solutions to reduce carbon footprint.",
+       "amount": 850,
+       "tags": [
+         "renewable energy",
+         "sustainability",
+         "carbon reduction"
+       ],
+       "postedon": "2024-08-06"
+     },
+     {
+       "id": "P007",
+       "title": "Smart City Infrastructure",
+       "duration": "8 months",
+       "location": "Los Angeles, CA",
+       "description": "Enhancing urban infrastructure with smart technologies to improve city living.",
+       "amount": 950,
+       "tags": [
+         "smart cities",
+         "urban planning",
+         "technology integration"
+       ],
+       "postedon": "2024-08-07"
+     },
+     {
+       "id": "P008",
+       "title": "E-commerce Platform Upgrade",
+       "duration": "4 months",
+       "location": "Boston, MA",
+       "description": "Upgrading an existing e-commerce platform to enhance user experience and functionality.",
+       "amount": 750,
+       "tags": [
+         "e-commerce",
+         "website development",
+         "user experience"
+       ],
+       "postedon": "2024-08-08"
+     },
+     {
+       "id": "P009",
+       "title": "Healthcare Data Analytics",
+       "duration": "6 months",
+       "location": "Philadelphia, PA",
+       "description": "Implementing data analytics solutions to improve patient care and operational efficiency in healthcare.",
+       "amount": 900,
+       "tags": [
+         "data analytics",
+         "healthcare",
+         "patient care"
+       ],
+       "postedon": "2024-08-09"
+     },
+     {
+       "id": "P010",
+       "title": "Autonomous Vehicle Research",
+       "duration": "9 months",
+       "location": "Detroit, MI",
+       "description": "Conducting research and development for autonomous vehicle technology to enhance safety and efficiency.",
+       "amount": 1000,
+       "tags": [
+         "autonomous vehicles",
+         "AI",
+         "transportation"
+       ],
+       "postedon": "2024-08-10"
+     },
+     {
+       "id": "P011",
+       "title": "Digital Marketing Strategy",
+       "duration": "3 months",
+       "location": "Miami, FL",
+       "description": "Creating and implementing a comprehensive digital marketing strategy to increase online presence.",
+       "amount": 600,
+       "tags": [
+         "digital marketing",
+         "SEO",
+         "content creation"
+       ],
+       "postedon": "2024-08-11"
+     },
+     {
+       "id": "P012",
+       "title": "Smart Agriculture System",
+       "duration": "5 months",
+       "location": "Dallas, TX",
+       "description": "Developing a smart agriculture system using IoT to improve crop management and yield.",
+       "amount": 700,
+       "tags": [
+         "smart agriculture",
+         "IoT",
+         "crop management"
+       ],
+       "postedon": "2024-08-12"
+     },
+     {
+       "id": "P013",
+       "title": "Educational App Development",
+       "duration": "4 months",
+       "location": "San Diego, CA",
+       "description": "Designing and developing an educational app to enhance learning experiences for students.",
+       "amount": 550,
+       "tags": [
+         "education",
+         "app development",
+         "learning tools"
+       ],
+       "postedon": "2024-08-13"
+     },
+     {
+       "id": "P014",
+       "title": "Augmented Reality for Retail",
+       "duration": "6 months",
+       "location": "Seattle, WA",
+       "description": "Implementing augmented reality solutions to enhance the retail shopping experience.",
+       "amount": 900,
+       "tags": [
+         "AR",
+         "retail",
+         "customer experience"
+       ],
+       "postedon": "2024-08-14"
+     },
+     {
+       "id": "P015",
+       "title": "Renewable Energy Storage",
+       "duration": "7 months",
+       "location": "San Francisco, CA",
+       "description": "Researching new methods for storing renewable energy to ensure consistent energy supply.",
+       "amount": 950,
+       "tags": [
+         "energy storage",
+         "renewable energy",
+         "sustainability"
+       ],
+       "postedon": "2024-08-15"
+     },
+     {
+       "id": "P016",
+       "title": "Voice Recognition System",
+       "duration": "5 months",
+       "location": "New York, NY",
+       "description": "Developing a voice recognition system for various applications including personal assistants and security.",
+       "amount": 800,
+       "tags": [
+         "voice recognition",
+         "AI",
+         "personal assistants"
+       ],
+       "postedon": "2024-08-16"
+     },
+     {
+       "id": "P017",
+       "title": "Robotics for Manufacturing",
+       "duration": "6 months",
+       "location": "Chicago, IL",
+       "description": "Implementing robotic solutions to improve efficiency and precision in manufacturing processes.",
+       "amount": 850,
+       "tags": [
+         "robotics",
+         "manufacturing",
+         "automation"
+       ],
+       "postedon": "2024-08-17"
+     },
+     {
+       "id": "P018",
+       "title": "Financial Analytics Platform",
+       "duration": "8 months",
+       "location": "Boston, MA",
+       "description": "Creating a platform for financial analytics to assist businesses in making data-driven decisions.",
+       "amount": 950,
+       "tags": [
+         "financial analytics",
+         "data visualization",
+         "business intelligence"
+       ],
+       "postedon": "2024-08-18"
+     },
+     {
+       "id": "P019",
+       "title": "3D Printing Innovations",
+       "duration": "4 months",
+       "location": "San Jose, CA",
+       "description": "Exploring new applications and materials for 3D printing to expand its possibilities.",
+       "amount": 700,
+       "tags": [
+         "3D printing",
+         "manufacturing",
+         "innovation"
+       ],
+       "postedon": "2024-08-19"
+     },
+     {
+       "id": "P020",
+       "title": "Smart Wearable Technology",
+       "duration": "6 months",
+       "location": "Austin, TX",
+       "description": "Developing advanced wearable technology for health monitoring and fitness tracking.",
+       "amount": 900,
+       "tags": [
+         "wearable tech",
+         "health monitoring",
+         "fitness"
+       ],
+       "postedon": "2024-08-20"
+     },
+     {
+       "id": "P021",
+       "title": "Cloud Computing Solutions",
+       "duration": "5 months",
+       "location": "Atlanta, GA",
+       "description": "Implementing cloud computing solutions to improve scalability and flexibility for businesses.",
+       "amount": 850,
+       "tags": [
+         "cloud computing",
+         "IT infrastructure",
+         "scalability"
+       ],
+       "postedon": "2024-08-21"
+     },
+     {
+       "id": "P022",
+       "title": "Energy Efficient Buildings",
+       "duration": "7 months",
+       "location": "Seattle, WA",
+       "description": "Designing and implementing energy-efficient solutions for commercial and residential buildings.",
+       "amount": 950,
+       "tags": [
+         "energy efficiency",
+         "building design",
+         "sustainability"
+       ],
+       "postedon": "2024-08-22"
+     },
+     {
+       "id": "P023",
+       "title": "Data Privacy Solutions",
+       "duration": "4 months",
+       "location": "San Francisco, CA",
+       "description": "Developing solutions to enhance data privacy and protect user information.",
+       "amount": 600,
+       "tags": [
+         "data privacy",
+         "cybersecurity",
+         "compliance"
+       ],
+       "postedon": "2024-08-23"
+     },
+     {
+       "id": "P024",
+       "title": "Interactive Learning Tools",
+       "duration": "3 months",
+       "location": "Los Angeles, CA",
+       "description": "Creating interactive tools to make learning more engaging and effective for students.",
+       "amount": 550,
+       "tags": [
+         "education",
+         "interactive tools",
+         "student engagement"
+       ],
+       "postedon": "2024-08-24"
+     },
+     {
+       "id": "P025",
+       "title": "Advanced Data Visualization",
+       "duration": "6 months",
+       "location": "New York, NY",
+       "description": "Developing advanced data visualization techniques to improve data interpretation and decision-making.",
+       "amount": 700,
+       "tags": [
+         "data visualization",
+         "analytics",
+         "business intelligence"
+       ],
+       "postedon": "2024-08-25"
+     }
+ ]
